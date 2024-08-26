@@ -1,0 +1,26 @@
+---
+// Import the global.css file here so that it is included on
+import "../styles/global.css";
+
+import GoogleFont from "./GoogleFont.astro";
+import FontAwesome from "./FontAwesome.astro";
+import Favicon from "./Favicon.astro";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global Metadata -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="Blogster" />
+    <Favicon />
+    <slot name="meta" />
+    <GoogleFont />
+    <FontAwesome />
+  </head>
+
+  <body class="w-full h-full">
+    <slot name="main" />
+  </body>
+</html>
